@@ -37,7 +37,7 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update logo
-        run: !
+        run: |
           python -m actions_workshop --version VERSION --base-logo logo_base.png --new-logo logo.png 
       
       - name: Commit and push changes
