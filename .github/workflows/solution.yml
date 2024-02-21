@@ -27,6 +27,7 @@ jobs:
           
       - name: Install dependencies
         run: |
+          pip install .
           pip install -r requirements-dev.txt
 
       - name: Bump version
